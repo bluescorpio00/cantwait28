@@ -31,7 +31,6 @@ class _AddPageState extends State<AddPage> {
               backgroundColor: Colors.red,
             ));
           }
-          ;
         },
         child: BlocBuilder<AddCubit, AddState>(
           builder: (context, state) {
