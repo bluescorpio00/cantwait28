@@ -5,19 +5,19 @@ class ItemModel {
     required this.id,
     required this.title,
     required this.imageURL,
-    required this.relaseDate,
+    required this.releaseDate,
   });
 
   final String id;
   final String title;
   final String imageURL;
-  final DateTime relaseDate;
+  final DateTime releaseDate;
 
   String daysLeft() {
-    return relaseDate.difference(DateTime.now()).inDays.toString();
+    return releaseDate.difference(DateTime.now()).inDays.toString();
   }
 
-  String relaseDateFormatted() {
-    return DateFormat.yMMMEd().format(relaseDate);
+  String releaseDateFormatted() {
+    return DateFormat.yMMMEd().format(releaseDate);
   }
 }
